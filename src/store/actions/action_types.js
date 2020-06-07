@@ -1,6 +1,7 @@
-//Will be used as our boiler plate actions.
-export const SUCCESS = "SUCCESS";
+//Will hold all the string actions types in variables. This will allow easy modifying of your action types since you will only have to change them here instead having to track down where ever you used the action in your code.
 
+//Used as our boiler plate actions.
+export const SUCCESS = "SUCCESS";
 
 export const FAILURE = "FAILURE";
 
@@ -19,15 +20,3 @@ export const REMOVE_PROFILE = "REMOVE_PROFILE";
 export const USER_INPUT_CHANGE = "USER_INPUT_CHANGE";
 
 export const USER_INPUT_SUBMIT = "USER_INPUT_SUBMIT";
-
-
-
-
-
-
-
-
-
-
-//Will hold all the string actions types in variables. This will allow easy modifying of your action types since you will only have to change them here instead having to track down where ever you used the action in your code.
-
