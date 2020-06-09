@@ -3,7 +3,7 @@ import { Router } from "react-router-dom"
 import { Container } from "reactstrap";
 
 import NavBar from "./components/NavBar";
-// import Jubotron from "./components/Jumbotron";
+// import Plebisite from "./components/Plebisite";
 // import Loading from "./components/Loading";
 // import LogoHomeButton from "./components/LogoHomeButton";
 // import MemberCard from "./components/MemberCard";
