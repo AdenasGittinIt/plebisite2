@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Router } from "react-router-dom"
+import { Container } from "reactstrap";
+
+import NavBar from "./components/NavBar";
+// import Jubotron from "./components/Jumbotron";
+// import Loading from "./components/Loading";
+// import LogoHomeButton from "./components/LogoHomeButton";
+// import MemberCard from "./components/MemberCard";
+// import MemberDetail from "./components/MemberDetail";
+import Footer from "./components/Footer";
+import Home from "./views/Home"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <Container> 
+        <Home />
+        {/* <Switch>
+          <Route exact path="/" component={Home}/> 
+          <Route />
+          <Route />
+          <Route />
+        </Switch> */}
+      </Container>
+      <Footer />
+      </>
   );
 }
 
 export default App;
+
+//the biggest russian nesting doll
+//deleted everything inside the main div
