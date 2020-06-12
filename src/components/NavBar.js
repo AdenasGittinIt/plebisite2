@@ -1,25 +1,25 @@
-//will include the dropdown toggle
-
+// will include the dropdown toggle
 import React from "react";
+import { Button } from "reactstrap"
 
-const NavBar = (props) => {
+import { useAuth0 } from "../react-auth0-spa";
+
+const NavBar = () => {
+  const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
+
   return (
-    <h2>NavBar</h2>
-  )
+    <div>
+      {!isAuthenticated && (
+        <Button color="primary" onClick={() => loginWithRedirect({})}>Log in</Button>
+      )}
 
-
-
-
-
-
-
-
-
-
-
-}
+      {isAuthenticated && <Button color="primary" onClick={() => logout()}>Log out</Button>}
+    </div>
+  );
+};
 
 export default NavBar;
+
 
 // import React, { useState } from "react";
 // import { NavLink as RouterNavLink } from "react-router-dom";

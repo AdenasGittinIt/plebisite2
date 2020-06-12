@@ -1,9 +1,9 @@
 import React from "react";
-import Jumbotron from "../components/PlebsiteJumbotron/Plebisite"
+import Plebisite from "../components/Plebisite"
 
 const Home = (props) => {
   return (
-    <Jumbotron />
+    <Plebisite />
   )
 }
 
