@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = (props) => {
   return (
-    <h2>Footer</h2>
+    <p>Stats brought to you by the ProPublica API</p>
   )
 
 }

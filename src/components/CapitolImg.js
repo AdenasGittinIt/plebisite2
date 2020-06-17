@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, CardImg, Card} from "reactstrap";
+import { Row, Col } from "reactstrap";
 
 
 const CapitolImage = (props) => {
